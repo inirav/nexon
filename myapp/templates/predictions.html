@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Predictions</title>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph. {{ prediction }}</p>
+<form method="post">
+    {% csrf_token %}
+    <label for="text">Text:</label><br>
+    <input type="text" id="text" name="mytext"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
